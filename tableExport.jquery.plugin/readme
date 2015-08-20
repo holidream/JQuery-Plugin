@@ -1,0 +1,41 @@
+相关用法可以参考：http://ngiriraj.com/pages/htmltable_export/demo.php
+
+Export HTML Table to
+
+JSON
+XML
+PNG
+CSV
+TXT
+SQL
+MS-Word
+Ms-Excel
+Ms-Powerpoint
+PDF
+Installation
+jquery Plugin
+<script type="text/javascript" src="tableExport.js">
+<script type="text/javascript" src="jquery.base64.js">
+
+
+PNG Export
+<script type="text/javascript" src="html2canvas.js">
+
+PDF Export
+<script type="text/javascript" src="jspdf/libs/sprintf.js">
+<script type="text/javascript" src="jspdf/jspdf.js">
+<script type="text/javascript" src="jspdf/libs/base64.js">
+
+Usage
+onClick ="$('#tableID').tableExport({type:'pdf',escape:'false'});"
+
+Options
+separator: ','
+ignoreColumn: [2,3],
+tableName:'yourTableName'
+type:'csv'
+pdfFontSize:14
+pdfLeftMargin:20
+escape:'true'
+htmlContent:'false'
+consoleLog:'false' 
